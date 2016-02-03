@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="./javascripts/main.js"></script>
+</head>
+<body>
+    <div ng-app="spatialDialogue" ng-controller="webAudioCtrl">
+        <h1>Spatial Dialogue</h1>
+        <p> Click and drag the person within the box to witness changes in sound spatialiazation. Use the arrow keys or the the mouse wheel to notice the changes along the Z axis.</p> 
+        <div id="panner"></div>
+
+        <script src="./javascripts/shared.js" type="text/javascript"></script>
+        <script src="./javascripts/spatial.js" type="text/javascript"></script>
+        <script>sample = new SpatializedSample(document.querySelector('#panner'));</script>
+    </div>
+</body>
